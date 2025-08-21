@@ -4,7 +4,7 @@ This template provides a React application built with Feature Sliced Design (FSD
 
 ## Feature Sliced Design Architecture
 
-This project follows the [Feature Sliced Design](https://feature-sliced.design/) methodology, which provides a standardized way to organize frontend projects.
+This project follows the [Feature Sliced Design](https://speakerdeck.com/osakatechlab/hurontoendonodeirekutorigou-cheng-dousiteru-feature-sliced-design-dao-ru-ti-yan-tan) methodology, which provides a standardized way to organize frontend projects.
 
 ### Project Structure
 
