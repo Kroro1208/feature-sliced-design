@@ -1,9 +1,9 @@
-import { Button } from '@/shared/ui/Button';
+import { AppRouter } from './providers';
 
 function App() {
   return (
     <>
-      <Button />
+      <AppRouter />
     </>
   );
 }
