@@ -7,12 +7,13 @@ This template provides a React application built with Feature Sliced Design (FSD
 This project follows the [Feature Sliced Design](https://speakerdeck.com/osakatechlab/hurontoendonodeirekutorigou-cheng-dousiteru-feature-sliced-design-dao-ru-ti-yan-tan) methodology, which provides a standardized way to organize frontend projects.
 
 以下参考資料
+
 1. [Feature Sliced Design(フロントアーキテクチャ)でクリーンなアプリケーション構造を実現](https://zenn.dev/kyuki/articles/d736b0957e6336)
 2. [個人的におすすめしたいFeature-Sliced Designというフロントエンドアーキテクチャ設計方法論](https://zenn.dev/moneyforward/articles/e1ed48c3974811)
 
 ### Project Structure
-<img width="1400" height="622" alt="1_-dievHDJeTB1b09rOV93sQ" src="https://github.com/user-attachments/assets/18e6345f-ce55-47af-a5e0-233baafb04cf" />
 
+<img width="1400" height="622" alt="1_-dievHDJeTB1b09rOV93sQ" src="https://github.com/user-attachments/assets/18e6345f-ce55-47af-a5e0-233baafb04cf" />
 
 ```
 src/
