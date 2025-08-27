@@ -1,17 +1,20 @@
-import { cn } from '@/shared/lib';
 import type { ButtonHTMLAttributes, ReactNode } from 'react';
+import { cn } from '@/shared/lib';
 import styles from './Button.module.scss';
 
-type ButtonSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl';
+type ButtonSize = 'xs' | 'sm' | 'md' | 'lg';
 type ButtonForm = 'rounded' | 'pill' | 'circle';
 type ButtonTheme = 'primary' | 'secondary' | 'tertiary' | 'outline' | 'ghost';
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   children?: ReactNode;
+  className?: string;
   size?: ButtonSize;
   form?: ButtonForm;
   theme?: ButtonTheme;
   disabled?: boolean;
+  fullWidth?: boolean;
+  isLoading?: boolean;
 }
 
 export const Button = (props: ButtonProps) => {
@@ -22,23 +25,28 @@ export const Button = (props: ButtonProps) => {
     theme = 'primary',
     form = 'pill',
     disabled = false,
+    fullWidth = false,
+    isLoading = false,
     ...rest
   } = props;
   return (
-    <div>
-      <button
-        {...rest}
-        disabled={disabled}
-        className={cn(
-          styles.button,
-          styles[size],
-          styles[theme],
-          styles[form],
-          className
-        )}
-      >
-        {children}
-      </button>
-    </div>
+    <button
+      {...rest}
+      disabled={disabled}
+      className={cn(
+        styles.button,
+        className,
+        styles[size],
+        styles[form],
+        styles[theme],
+        {
+          [styles.disabled]: disabled,
+          [styles.fullWidth]: fullWidth,
+          [styles.isLoading]: isLoading,
+        }
+      )}
+    >
+      {children}
+    </button>
   );
 };
