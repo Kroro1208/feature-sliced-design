@@ -2,5 +2,7 @@
   "hello": "こんにちは",
   "theme change": "テーマ変更",
   "go to login": "ログインへ",
-  "search..": "検索.."
+  "search..": "検索..",
+  "cart": "カート",
+  "login": "ログイン"
 }

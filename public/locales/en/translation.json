@@ -2,5 +2,7 @@
   "hello": "hello",
   "theme change": "theme change",
   "go to login": "go to login",
-  "search..": "search.."
+  "search..": "search..",
+  "cart": "cart",
+  "login": "login"
 }
