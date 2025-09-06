@@ -10,7 +10,7 @@ export const classNames = (...args: ClassValue[]): string => {
           Object.entries(arg)
             // trueの値を持つキーだけを取り出し
             .filter(([_, value]) => Boolean(value))
-            .map(([key]) => key)
+            .map((arg) => arg[0])
         );
       }
       return [];
