@@ -1,4 +1,5 @@
 import { routePaths } from '@/shared/config';
+import { Footer } from '@/widgets/Footer';
 import { HeaderPage } from '@/widgets/Header';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router';
@@ -8,11 +9,13 @@ const HomePage = () => {
   const { t } = useTranslation();
 
   return (
-    <>
+    <div className={styles.pageWrapper}>
       <HeaderPage />
-      <h1 className={styles.title}>{t('hello')}</h1>
-      <Link to={routePaths.login}>{t('go to login')}</Link>
-    </>
+      <main className={styles.content}>
+        <Link to={routePaths.login}>{t('go to login')}</Link>
+      </main>
+      <Footer />
+    </div>
   );
 };
 

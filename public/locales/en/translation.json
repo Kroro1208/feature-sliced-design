@@ -4,5 +4,26 @@
   "go to login": "go to login",
   "search..": "search..",
   "cart": "cart",
-  "login": "login"
+  "login": "login",
+  "footer": {
+    "text": "Footer text",
+    "about": "About",
+    "ourBranches": "Our Branches", 
+    "changeLog": "Change Log",
+    "quickLinks": "Quick Links",
+    "faqs": "FAQs",
+    "recipes": "Recipes",
+    "contactUs": "Contact Us",
+    "helpSuport": "Help & Support",
+    "termOfServe": "Terms of Service",
+    "privacyPolicy": "Privacy Policy",
+    "security": "Security",
+    "company": "Company",
+    "blog": "Blog",
+    "contact": "Contact",
+    "social": "Social",
+    "facebook": "Facebook",
+    "instagram": "Instagram",
+    "twitter": "Twitter"
+  }
 }

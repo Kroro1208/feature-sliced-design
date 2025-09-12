@@ -4,5 +4,25 @@
   "go to login": "ログインへ",
   "search..": "検索..",
   "cart": "カート",
-  "login": "ログイン"
+  "login": "ログイン",
+  "footer": {
+    "about": "概要",
+    "ourBranches": "店舗情報",
+    "changeLog": "変更履歴",
+    "quickLinks": "クイックリンク",
+    "faqs": "よくある質問",
+    "recipes": "レシピ",
+    "contactUs": "お問い合わせ",
+    "helpSuport": "ヘルプ・サポート",
+    "termOfServe": "利用規約",
+    "privacyPolicy": "プライバシーポリシー",
+    "security": "セキュリティ",
+    "company": "会社情報",
+    "blog": "ブログ",
+    "contact": "お問い合わせ",
+    "social": "ソーシャル",
+    "facebook": "Facebook",
+    "instagram": "Instagram",
+    "twitter": "Twitter"
+  }
 }
