@@ -8,7 +8,7 @@
   "footer": {
     "text": "Footer text",
     "about": "About",
-    "ourBranches": "Our Branches", 
+    "ourBranches": "Our Branches",
     "changeLog": "Change Log",
     "quickLinks": "Quick Links",
     "faqs": "FAQs",
@@ -25,5 +25,8 @@
     "facebook": "Facebook",
     "instagram": "Instagram",
     "twitter": "Twitter"
+  },
+  "pageLoader": {
+    "loading": "Loading..."
   }
 }
