@@ -12,7 +12,7 @@ const NotFoundPage = () => {
   const navigate = useNavigate();
 
   const handleClickBack = () => {
-    if (window.history.length < 1) {
+    if (window.history.length <= 1) {
       navigate(routePaths.home);
       return;
     }
