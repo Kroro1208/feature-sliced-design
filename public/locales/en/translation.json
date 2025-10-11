@@ -5,6 +5,7 @@
   "search..": "search..",
   "cart": "cart",
   "login": "login",
+  "click": "クリック",
   "footer": {
     "text": "Footer text",
     "about": "About",
@@ -28,5 +29,10 @@
   },
   "pageLoader": {
     "loading": "Loading..."
+  },
+  "pageError": {
+    "title": "Something went wrong",
+    "description": "An unexpected error has occurred. Please try reloading the page.",
+    "reload": "Reload Page"
   }
 }

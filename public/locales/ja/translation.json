@@ -5,6 +5,7 @@
   "search..": "検索..",
   "cart": "カート",
   "login": "ログイン",
+  "click": "クリック",
   "footer": {
     "about": "概要",
     "ourBranches": "店舗情報",
@@ -27,5 +28,10 @@
   },
   "pageLoader": {
     "loading": "読み込み中..."
+  },
+  "pageError": {
+    "title": "問題が発生しました",
+    "description": "予期しないエラーが発生しました。\nページを再読み込みしてください。",
+    "reload": "ページを再読み込み"
   }
 }
