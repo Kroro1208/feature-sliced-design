@@ -1,6 +1,5 @@
 import { routePaths } from '@/shared/config';
 import { useTranslation } from 'react-i18next';
-import { BiLogoApple } from 'react-icons/bi';
 import { Link } from 'react-router';
 import styles from './Footer.module.scss';
 
@@ -9,7 +8,6 @@ export const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.container}>
-        <BiLogoApple className={styles.icon} />
         <div className={styles.links}>
           <div className={styles.column}>
             <h3 className={styles.columnTitle}>{t('footer.about')}</h3>
