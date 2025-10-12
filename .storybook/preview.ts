@@ -1,6 +1,7 @@
 import type { Preview } from '@storybook/react-vite';
-import '../src/app/styles/index.scss';
 
+import { LanguageDecorator } from '../src/shared/config/stroybook/Decorators/LanguageDecorator';
+import { RouterDecorator } from '../src/shared/config/stroybook/Decorators/RouterDecorator';
 import { ThemaDecorator } from '../src/shared/config/stroybook/Decorators/ThemaDecorator';
 
 const preview: Preview = {
@@ -18,6 +19,19 @@ const preview: Preview = {
       },
       defaultValue: 'pink-theme',
     },
+    locale: {
+      name: 'Locale',
+      description: 'App locale',
+      toolbar: {
+        icon: 'globe',
+        items: [
+          { value: 'en', title: 'English Theme' },
+          { value: 'ja', title: 'Japan Theme' },
+        ],
+        dinamicTitle: true,
+      },
+      defaultValue: 'en',
+    },
   },
   parameters: {
     controls: {
@@ -34,7 +48,7 @@ const preview: Preview = {
       test: 'todo',
     },
   },
-  decorators: [ThemaDecorator],
+  decorators: [RouterDecorator, ThemaDecorator, LanguageDecorator],
 };
 
 export default preview;
