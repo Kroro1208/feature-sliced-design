@@ -4,6 +4,21 @@ import '../src/app/styles/index.scss';
 import { ThemaDecorator } from '../src/shared/config/stroybook/Decorators/ThemaDecorator';
 
 const preview: Preview = {
+  globalTypes: {
+    theme: {
+      name: 'Theme',
+      description: 'App theme',
+      toolbar: {
+        icon: 'circlehollow',
+        items: [
+          { value: 'blue-theme', title: 'Blue Theme' },
+          { value: 'pink-theme', title: 'Pink Theme' },
+        ],
+        dinamicTitle: true,
+      },
+      defaultValue: 'pink-theme',
+    },
+  },
   parameters: {
     controls: {
       matchers: {
