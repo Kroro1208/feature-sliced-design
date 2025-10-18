@@ -4,7 +4,8 @@ export const AppRoutes = {
   NOT_FOUND: 'notfound',
 } as const;
 
-type AppRoutes = (typeof AppRoutes)[keyof typeof AppRoutes];
+type AppRouteKeys = keyof typeof AppRoutes;
+type AppRoutes = (typeof AppRoutes)[AppRouteKeys];
 
 // 各pageコンポーネントのLinkでto={routePaths.login}のように使用できる
 export const routePaths: Record<AppRoutes, string> = {
