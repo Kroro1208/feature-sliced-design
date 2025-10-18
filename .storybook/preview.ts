@@ -1,5 +1,7 @@
 import type { Preview } from '@storybook/react-vite';
 
+import '../src/app/styles/index.scss';
+
 import { LanguageDecorator } from '../src/shared/config/stroybook/Decorators/LanguageDecorator';
 import { RouterDecorator } from '../src/shared/config/stroybook/Decorators/RouterDecorator';
 import { ThemaDecorator } from '../src/shared/config/stroybook/Decorators/ThemaDecorator';
