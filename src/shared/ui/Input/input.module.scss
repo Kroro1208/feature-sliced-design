@@ -10,7 +10,7 @@
   padding: 12px 16px;
   transition: all 0.2s linear;
 
-  &.focus {
+  &.focused {
     border-color: var(--primary-color);
   }
 
@@ -59,5 +59,21 @@
 
   &.error {
     color: var(--red-500);
+  }
+}
+
+.toggleVisibility {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  color: var(--gray-600);
+  transition: color 0.2s;
+
+  &:hover {
+    color: var(--primary-color);
   }
 }
