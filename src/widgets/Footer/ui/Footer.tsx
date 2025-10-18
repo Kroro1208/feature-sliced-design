@@ -1,6 +1,8 @@
-import { routePaths } from '@/shared/config';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router';
+
+import { routePaths } from '@/shared/config';
+
 import styles from './Footer.module.scss';
 
 export const Footer = () => {

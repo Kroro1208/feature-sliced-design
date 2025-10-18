@@ -1,5 +1,6 @@
-import { routePaths } from '@/shared/config';
 import { Link } from 'react-router';
+
+import { routePaths } from '@/shared/config';
 
 const LoginPage = () => {
   return (

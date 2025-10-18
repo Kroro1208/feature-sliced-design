@@ -1,6 +1,8 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
 import { BiSearch } from 'react-icons/bi';
+
 import { AppIcon } from '../AppIcon/AppIcon';
+
 import { Input } from './input';
 
 const meta = {

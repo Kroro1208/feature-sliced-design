@@ -1,12 +1,15 @@
-import { AiOutlineEye, AiOutlineEyeInvisible } from 'react-icons/ai';
-import { cn } from '@/shared/lib';
 import {
   useState,
   type ChangeEvent,
   type InputHTMLAttributes,
   type ReactNode,
 } from 'react';
+import { AiOutlineEye, AiOutlineEyeInvisible } from 'react-icons/ai';
+
+import { cn } from '@/shared/lib';
+
 import { Button } from '../Button/Button';
+
 import styles from './Input.module.scss';
 
 type HTMLInputType = Omit<InputHTMLAttributes<HTMLInputElement>, 'onChange'>;

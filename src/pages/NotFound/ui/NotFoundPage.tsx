@@ -1,9 +1,9 @@
 import { useTranslation } from 'react-i18next';
+import { TbError404 } from 'react-icons/tb';
 import { useNavigate } from 'react-router';
 
 import { routePaths } from '@/shared/config';
 import { Button } from '@/shared/ui';
-import { TbError404 } from 'react-icons/tb';
 
 import styles from './NotFoundPage.module.scss';
 

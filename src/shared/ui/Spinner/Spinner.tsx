@@ -1,4 +1,5 @@
 import { cn } from '@/shared/lib';
+
 import styles from './Spinner.module.scss';
 
 type SpinnerSize = 'sm' | 'md' | 'lg';

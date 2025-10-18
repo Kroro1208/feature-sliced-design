@@ -1,4 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react-vite';
+
 import { LanguageSwitcher } from './LanguageSwitcher';
 
 const meta = {

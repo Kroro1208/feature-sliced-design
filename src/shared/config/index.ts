@@ -1,4 +1,5 @@
 import type { SupportedLanguagesType } from '@/shared/config/i18n/LanguageIconList';
+
 import { languageIconList } from './i18n/LanguageIconList';
 import { AppRoutes, routePaths } from './router/routePaths';
 import {

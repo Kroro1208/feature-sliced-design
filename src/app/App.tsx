@@ -1,6 +1,8 @@
 import { Suspense } from 'react';
-import { AppRouter } from './providers';
+
 import { PageLoader } from '@/widgets/PageLoader';
+
+import { AppRouter } from './providers';
 
 function App() {
   return (

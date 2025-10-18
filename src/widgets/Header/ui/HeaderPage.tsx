@@ -1,13 +1,14 @@
-import { AppIcon, Button, Input } from '@/shared/ui';
 import { faCloud } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
-import { routePaths } from '@/shared/config';
 import { useTranslation } from 'react-i18next';
 import { BiMapPin } from 'react-icons/bi';
 import { IoSearchCircleOutline } from 'react-icons/io5';
 import { PiUserCircleMinus } from 'react-icons/pi';
 import { useNavigate } from 'react-router';
+
+import { routePaths } from '@/shared/config';
+import { AppIcon, Button, Input } from '@/shared/ui';
+
 import styles from './Header.module.scss';
 import { LanguageSwitcher } from './LanguageSwitcher/LanguageSwitcher';
 import { ThemeSwitcher } from './ThemeSwitcher/ThemeSwitcher';

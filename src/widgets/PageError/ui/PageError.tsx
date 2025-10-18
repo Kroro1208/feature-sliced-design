@@ -1,6 +1,8 @@
-import { Button } from '@/shared/ui';
 import { useTranslation } from 'react-i18next';
 import { TbFaceIdError } from 'react-icons/tb';
+
+import { Button } from '@/shared/ui';
+
 import styles from './PageError.module.scss';
 
 const PageError = () => {
