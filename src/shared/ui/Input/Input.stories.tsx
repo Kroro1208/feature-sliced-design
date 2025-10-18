@@ -3,7 +3,7 @@ import { BiSearch } from 'react-icons/bi';
 
 import { AppIcon } from '../AppIcon/AppIcon';
 
-import { Input } from './input';
+import { Input } from './Input';
 
 const meta = {
   title: 'shared/Input ',
