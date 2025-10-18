@@ -1,41 +1,41 @@
 name: CI
 
 on:
-  push:
-    branches: [main]
+    push:
+        branches: [main]
 
 jobs:
-  ci:
-    runs-on: ubuntu-latest
+    ci:
+        runs-on: ubuntu-latest
 
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v4
+              with:
+                  fetch-depth: 0
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20.x'
-          cache: 'npm'
+            - name: Setup Node.js
+              uses: actions/setup-node@v4
+              with:
+                  node-version: "20.x"
+                  cache: "npm"
 
-      - name: Install dependencies
-        run: npm ci
+            - name: Install dependencies
+              run: npm ci
 
-      - name: TypeScript
-        run: npm run lint:fix
+            - name: TypeScript
+              run: npm run lint:ts
 
-      - name: Eslint
-        run: npm run lint
+            - name: Eslint
+              run: npm run lint
 
-      - name: stylelint
-        run: npm run lint:scss
+            - name: stylelint
+              run: npm run lint:scss
 
-      - name: unit tests
-        run: npm run test:unit
+            - name: unit tests
+              run: npm run test:unit
 
-      - name: Regression tests
-        uses: chromaui/action@latest
-        with:
-          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+            - name: Regression tests
+              uses: chromaui/action@latest
+              with:
+                  projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
