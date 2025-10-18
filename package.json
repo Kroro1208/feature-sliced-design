@@ -6,9 +6,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint:ts": "tsc",
+    "lint:ts": "ts",
     "lint": "eslint .",
-    "lint:scss": "stylelint */*.scss",
+    "lint:scss": "stylelint \"**/*.scss\"",
     "preview": "vite preview",
     "format": "prettier --write .",
     "test:unit": "vitest",
