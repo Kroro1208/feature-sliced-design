@@ -21,7 +21,10 @@ jobs:
                   cache: "npm"
 
             - name: Install dependencies
-              run: npm ci
+              run: npm ci --legacy-peer-deps
+
+            - name: Clear build cache
+              run: rm -rf node_modules/.cache
 
             - name: TypeScript
               run: npm run lint:ts
