@@ -2,14 +2,14 @@ name: CI
 
 on:
   push:
-    branches: [main]
+    branches: [master]
 
 jobs:
   ci:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      - name: Checkout code
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
@@ -21,35 +21,25 @@ jobs:
           cache: "npm"
 
       - name: Install dependencies
-        run: npm ci --legacy-peer-deps
+        run: npm ci
 
-      - name: Clear build cache
-        run: rm -rf node_modules/.cache
-
-      - name: Verify Storybook config
-        run: cat .storybook/main.ts
-
-      - name: TypeScript
+      - name: TypeScript check
         run: npm run lint:ts
 
-      - name: Eslint
+      - name: ESLint
         run: npm run lint
 
-      - name: stylelint
+      - name: SCSS lint
         run: npm run lint:scss
 
-      - name: unit tests
-        run: npm run test:unit
-
-      - name: Test Storybook build
-        run: npm run build-storybook
+      - name: Unit tests
+        run: npm run test:unit --run
 
       - name: Regression tests
         uses: chromaui/action@latest
         with:
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
           exitZeroOnChanges: false
-          storybookBuildDir: storybook-static
 
       - name: Build
         run: npm run build
