@@ -41,11 +41,15 @@ jobs:
       - name: unit tests
         run: npm run test:unit
 
+      - name: Test Storybook build
+        run: npm run build-storybook
+
       - name: Regression tests
         uses: chromaui/action@latest
         with:
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
           exitZeroOnChanges: false
+          storybookBuildDir: storybook-static
 
       - name: Build
         run: npm run build
