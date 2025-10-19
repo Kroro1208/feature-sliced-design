@@ -1,4 +1,4 @@
-import type { UserSchema } from '@/app/entities';
+import type { UserSchema } from '@/entities';
 
 export interface StateSchema {
   user: UserSchema;
