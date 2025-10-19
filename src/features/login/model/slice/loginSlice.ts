@@ -3,6 +3,7 @@ import { createSlice } from '@reduxjs/toolkit';
 
 import { AuthMethod, type AuthMethodType } from '@/shared/config/auth/auth';
 
+import { login } from '../services/login';
 import type { LoginFormSchema } from '../types/loginFormSchema';
 
 const initialState: LoginFormSchema = {
@@ -36,6 +37,20 @@ export const loginSlice = createSlice({
       state.phone = '';
       state.password = '';
     },
+  },
+  // 非同期での処理を扱うための設定
+  // createAsyncThunk で生成されたアクションに対するリデューサーを追加
+  extraReducers: (builder) => {
+    builder.addCase(login.pending, (state) => {
+      state.isLoading = true;
+    });
+    builder.addCase(login.fulfilled, (state) => {
+      state.isLoading = false;
+    });
+    builder.addCase(login.rejected, (state, action) => {
+      state.isLoading = false;
+      state.error = action.payload;
+    });
   },
 });
 

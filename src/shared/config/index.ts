@@ -2,6 +2,7 @@ import type { SupportedLanguagesType } from '@/shared/config/i18n/LanguageIconLi
 
 import {
   AuthProviders,
+  LOCAL_STORAGE_USER_KEY,
   type AuthMethodType,
   type AuthProviderType,
 } from './auth/auth';
@@ -20,6 +21,7 @@ export {
   AuthProviders,
   languageIconList,
   LOCAL_STORAGE_THEME_KEY,
+  LOCAL_STORAGE_USER_KEY,
   routePaths,
   Theme,
   ThemeContext,
