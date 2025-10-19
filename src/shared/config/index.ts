@@ -1,6 +1,10 @@
 import type { SupportedLanguagesType } from '@/shared/config/i18n/LanguageIconList';
 
-import { AuthProviders, type AuthProviderType } from './auth/auth';
+import {
+  AuthProviders,
+  type AuthMethodType,
+  type AuthProviderType,
+} from './auth/auth';
 import { languageIconList } from './i18n/LanguageIconList';
 import { AppRoutes, routePaths } from './router/routePaths';
 import {
@@ -20,6 +24,7 @@ export {
   Theme,
   ThemeContext,
   useTheme,
+  type AuthMethodType,
   type AuthProviderType,
   type SupportedLanguagesType,
   type ThemeType,
