@@ -6,17 +6,19 @@ import { BrowserRouter } from 'react-router';
 
 import App from '@/app/App.tsx';
 
-import { ThemeProvider } from './app/providers';
+import { StoreProvider, ThemeProvider } from './app/providers';
 import { ErrorBoundary } from './app/providers/ErrorBoundary/ui/ErrorBoundary';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <BrowserRouter>
-      <ThemeProvider>
-        <ErrorBoundary>
-          <App />
-        </ErrorBoundary>
-      </ThemeProvider>
-    </BrowserRouter>
+    <StoreProvider>
+      <BrowserRouter>
+        <ThemeProvider>
+          <ErrorBoundary>
+            <App />
+          </ErrorBoundary>
+        </ThemeProvider>
+      </BrowserRouter>
+    </StoreProvider>
   </StrictMode>
 );
